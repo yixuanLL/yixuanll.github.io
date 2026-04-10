@@ -1,0 +1,39 @@
+{% assign post = include.post %}
+
+<div class="pub-item">
+  <div class="pub-main">
+    <span class="pub-number">[{{ forloop.index }}]</span>
+
+    <span class="pub-authors">
+      {% if post.authors %}
+        {{ post.authors }}
+      {% endif %}
+    </span>
+
+    {% if post.authors %} {% endif %}
+
+    <span class="pub-title">“{{ post.title }}.”</span>
+
+    {% if post.venue %}
+      <span class="pub-venue">{{ post.venue }}</span>
+    {% endif %}
+
+    {% assign pub_year = post.date | date: "%Y" %}
+    <span class="pub-date">{{ pub_year }}</span>.
+  </div>
+
+  <div class="pub-links">
+    {% if post.paperurl %}
+      <a href="{{ post.paperurl }}">[PDF]</a>
+    {% endif %}
+    {% if post.codeurl %}
+      <a href="{{ post.codeurl }}">[Code]</a>
+    {% endif %}
+    {% if post.slidesurl %}
+      <a href="{{ post.slidesurl }}">[Slides]</a>
+    {% endif %}
+    {% if post.biburl %}
+      <a href="{{ post.biburl }}">[BibTeX]</a>
+    {% endif %}
+  </div>
+</div>
