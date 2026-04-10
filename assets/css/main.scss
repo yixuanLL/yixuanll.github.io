@@ -41,3 +41,50 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+.pub-year {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 1.6rem;
+}
+
+.pub-item {
+  margin-bottom: 1.25rem;
+}
+
+.pub-main {
+  line-height: 1.8;
+  color: #222;
+}
+
+.pub-number {
+  margin-right: 0.35rem;
+}
+
+.pub-authors {
+  color: #333;
+}
+
+.pub-title {
+  font-style: italic;
+}
+
+.pub-venue,
+.pub-date {
+  color: #444;
+}
+
+.pub-links {
+  margin-top: 0.2rem;
+  margin-left: 2.2rem;
+}
+
+.pub-links a {
+  margin-right: 0.75rem;
+  text-decoration: none;
+}
+
+.pub-links a:hover {
+  text-decoration: underline;
+}
